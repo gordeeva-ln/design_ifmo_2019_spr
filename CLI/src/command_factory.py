@@ -3,6 +3,7 @@ from src.commands.echo import CommandEcho
 from src.commands.exit import CommandExit
 from src.commands.pwd import CommandPwd
 from src.commands.wc import CommandWc
+from src.commands.grep import CommandGrep
 
 
 def get_commands():
@@ -11,7 +12,8 @@ def get_commands():
         'echo': CommandEcho,
         'wc':   CommandWc,
         'pwd':  CommandPwd,
-        'exit': CommandExit
+        'exit': CommandExit,
+        'grep': CommandGrep,
     }
 
     return commands
